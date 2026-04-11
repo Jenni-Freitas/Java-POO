@@ -33,25 +33,15 @@ abstract class Veiculo {
     // MODIFICADORES VIA GETTERS E SETTERS
     //O SETTER DE PRECOBASE TEM VALIDAÇÃO: NÃO ACEITA VALORES NEGATIVOS
     //EXEMPLO GETTERS
-    public String getMarca() {
-        return marca;
-    }
+    public String getMarca() {return marca;}
 
-    public String getModelo() {
-        return modelo;
-    }
+    public String getModelo() {return modelo;}
 
-    public String getPlaca() {
-        return placa;
-    }
+    public String getPlaca() {return placa;}
 
-    public int getAno() {
-        return ano;
-    }
+    public int getAno() {return ano;}
 
-    public double getPrecoBase() {
-        return precoBase;
-    }
+    public double getPrecoBase() {return precoBase;}
 
     //EXEMPLO SETTERS
     public void setPrecoBase(double precoBase) {
@@ -62,8 +52,8 @@ abstract class Veiculo {
         this.precoBase = precoBase;
     }
 
-    public String toString() {
-        return marca + " " + modelo + " (" + ano + ")";
+    public String exibirDados() {
+        return marca + " " + modelo + " (" + ano + ")" + placa + " " + precoBase;
     }
 
 
@@ -74,13 +64,4 @@ abstract class Veiculo {
 //CARRO - Qtd Portas (atributos)
 //Metodo calcularDiaria - Se qtdePortas >= 4 então acréscimo de 20%
 
-    abstract class Carro extends Veiculo {
-        private int quantidadePortas;
-
-        public Carro(String marca, String modelo, int ano, String placa, double precoBase, int quantidadePortas) {
-            super(marca, modelo, ano, placa, precoBase);
-            this.quantidadePortas = quantidadePortas;
-        }
-
     }
-}
