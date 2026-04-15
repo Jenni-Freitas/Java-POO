@@ -10,7 +10,7 @@ public class Main {
 //        System.out.println(moto1.exibirDados());
 
         Carro carro2 = new Carro("Volkswagen ", "Voyage", 2012, "jjj-9999", 150, 4);
-        System.out.println(carro2.exibirDados());
+  //      System.out.println(carro2.exibirDados());
 
         Moto moto2 = new Moto("Yamaha","Factor",2021,"yyy-9999",200,1000);
 //        System.out.println(moto2.exibirDados());
